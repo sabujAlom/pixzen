@@ -1,4 +1,4 @@
-import { Button, Card, Chip } from "@heroui/react";
+import { Button, Card, Chip, Separator } from "@heroui/react";
 import Image from 'next/image';
 import { BiDownload } from "react-icons/bi";
 import { FaHeart } from "react-icons/fa";
@@ -29,6 +29,8 @@ const PhotoCard = ({photo}) => {
               <p><FaHeart /></p>
               <p>{photo.likes}</p>
            </div>
+
+           <Separator orientation="vertical"/>
 
            <div className="flex items-center gap-2">
               <p><BiDownload /></p>
