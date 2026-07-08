@@ -1,6 +1,8 @@
+import Category from "@/components/Category"
 import PhotoCard from "@/components/PhotoCard";
 
-const AllPhotosPage = async() => {
+const AllPhotosPage = async({searchParams}) => {
+    const {category} = await searchParams;
     const res = await fetch('https://pixzen-five.vercel.app/data.json')
     const photos = await res.json()
    
